@@ -1,0 +1,82 @@
+.App {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://wallpaperaccess.com/full/164546.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+li {
+  list-style: none;
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(182, 193, 194, 0.7);
+  padding: 20px;
+  border-radius: 15px;
+  color: azure;
+  box-shadow: 0 0 10px rgba(230, 236, 237, 0.7);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card__title {
+  grid-column: span 2;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 8px;
+  color: blueviolet;
+}
+
+.card__subtitle {
+  grid-column: span 2;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.card__second-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.second__list {
+  display: grid;
+  gap: 7px;
+}
+
+.second__item {
+  color: #fffaff;
+}
+
+.second__span {
+  color: rgb(95, 49, 33);
+}
+
+.card__temperature {
+  grid-column: span 2;
+  text-align: center;
+  margin-bottom: 20px;
+  color: blueviolet;
+}
+
+.card__btn {
+  grid-column: span 2;
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+  background-color: cyan;
+  border: none;
+  border-radius: 8px;
+  color: whitesmoke;
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 100ms ease;
+}
